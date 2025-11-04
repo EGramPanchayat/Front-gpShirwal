@@ -9,16 +9,16 @@ const PlacesSection = () => (
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Ganpati  Mandir */}
         <div className="bg-white rounded-xl shadow-lg p-4 fade-in flex flex-col justify-between items-center h-full hover:shadow-2xl hover:-translate-y-1 transition">
-          <img src="./images/ganeshMandir.jpg" alt="गणपती मंदिर" className="w-full h-48 object-cover rounded-xl mb-4" />
-          <h5 className="text-lg font-bold mb-2 flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 2L12 22"/><path d="M6 12L12 2L18 12"/></svg> गणपती मंदिर</h5>
-          <p className="text-justify">गावाचे ग्रामदैवत असलेले गणपती मंदिर गावकऱ्यांचे प्रमुख श्रद्धास्थान आहे. एक गाव एक गणपती या संकल्पनेतून गणेश उत्सव साजरा केला जातो. यानिमित्त गावामध्ये यात्रा भरवली जाते. मंदिर गोमेवाडी गावाच्या मध्यभागी, मुख्य रस्त्याजवळ स्थित असल्यामुळे भाविकांसाठी ते सहज उपलब्ध आहे.</p>
+          <img src="./images/mandir.jpeg" alt="गणपती मंदिर" className="w-full h-48 object-cover rounded-xl mb-4" />
+          <h5 className="text-lg font-bold mb-2 flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 2L12 22"/><path d="M6 12L12 2L18 12"/></svg>ग्रामदैवत हनुमान मंदिर</h5>
+          <p className="text-justify">हनुमान मंदिर गावाच्या मध्यभागात आहे. तसेच गावामध्ये हनुमान जयंती मोठ्या उत्साहात साजरी केली जाते. तसेच गावामध्ये अखंड हरीनाम सप्ताह साजरा केला जातो हा सप्ताह २५ वर्षापासून चालू आहे.</p>
         </div>
-        {/* अर्जुनवडी तलाव */}
+        {/* अर्जुनवडी तलाव
         <div className="bg-white rounded-xl shadow-lg p-4 fade-in flex flex-col justify-between items-center h-full hover:shadow-2xl hover:-translate-y-1 transition">
           <img src="images/talav.jpg" alt="अर्जुनवाडी तलाव" className="w-full h-48 object-cover rounded-xl mb-4" />
           <h5 className="text-lg font-bold mb-2 flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M4 12h16"/><path d="M12 4v16"/></svg>अर्जुनवाडी तलाव</h5>
           <p className="text-justify">अर्जुनवाडी तलाव गावाच्या पश्चिम भागात स्थित आहे. पावसाळ्यात तलावाचे सौंदर्य अधिक खुलते, आणि हे ट्रेकिंगसाठी एक लोकप्रिय ठिकाण आहे. आसपास पिकनिक स्पॉट्स उपलब्ध आहेत. पर्यटकांना येथे शांततादायी आणि नैसर्गिक वातावरण अनुभवता येते.</p>
-        </div>
+        </div> */}
 
 
 

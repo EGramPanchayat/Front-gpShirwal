@@ -52,15 +52,23 @@ const Card = memo(function Card({ title, data, onChange, allowRemove, onRemove }
           maxLength={10}
         />
       </div>
-      <label className="cursor-pointer bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded shadow font-semibold">
-        Image
-        <input
-          type="file"
-          accept="image/*"
-          className="hidden"
-          onChange={e => onChange("image", e.target.files[0])}
-        />
-      </label>
+     <label className="cursor-pointer bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded shadow font-semibold">
+      Image
+      <input
+        type="file"
+        accept="image/*"
+        className="hidden"
+        onChange={(e) => {
+          const file = e.target.files[0];
+          if (file) {
+            const preview = URL.createObjectURL(file);
+            onChange("image", file);
+            onChange("imageUrl", preview); // ✅ update preview URL
+          }
+        }}
+      />
+    </label>
+
       {allowRemove && (
         <button
           type="button"

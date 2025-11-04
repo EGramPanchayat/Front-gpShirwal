@@ -222,6 +222,25 @@ export default function AdminDashboard() {
     }
   };
 
+  const handlelogout = async () => {
+  try {
+  
+    await axioesInstance.post("/logout", {}, { withCredentials: true });
+
+   
+    localStorage.removeItem("adminToken");
+
+   
+    toast.success("Logged out successfully!!!");
+
+    
+    window.location.href = "/";
+  } catch (err) {
+    console.error("Logout error:", err);
+    toast.error("Failed to logout. Please try again.");
+  }
+};
+
   // don't block rendering the navbar/outer shell while loading data;
   // show a localized loader inside the exec-section instead
 
@@ -239,7 +258,7 @@ export default function AdminDashboard() {
             />
             <div className="flex flex-col">
               <h1 className="text-lg md:text-xl font-bold tracking-wide whitespace-nowrap">
-                ग्रामपंचायत गोमेवाडी
+                ग्रामपंचायत तडवळे 
               </h1>
               <span className="text-sm md:text-base text-white/80">
                 ता. आटपाडी जि. सांगली
@@ -295,11 +314,7 @@ export default function AdminDashboard() {
                 </button>
                 <button
                   onClick={() => {
-                    // close mobile menu and any open modals before logout
-                    closeMobileMenu();
-                    setQrModalOpen(false);
-                    localStorage.removeItem("adminToken");
-                    window.location.href = "/login";
+                    handlelogout();
                   }}
                   className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded shadow font-bold transition"
                 >

@@ -6,7 +6,7 @@ const Navbar = ({ activeSection, mobileNavOpen, setMobileNavOpen }) => (
       <div className="flex items-center gap-3">
         <img src="/images/satya.png" alt="Logo" className="h-10 w-10 rounded-full object-cover border-2 border-white shadow mr-2" />
         <div className="flex flex-col">
-          <span className="text-xl font-bold">ग्रामपंचायत गोमेवाडी</span>
+          <span className="text-xl font-bold">ग्रामपंचायत तडवळे </span>
           <span className="text-sm font-semibold text-green-100 leading-tight">ता. आटपाडी, जि. सांगली</span>
         </div>
       </div>
