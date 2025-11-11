@@ -7,11 +7,11 @@ const PlacesSection = () => (
         <span className="block w-24 h-1 bg-orange-400 rounded absolute left-1/2 -translate-x-1/2 -bottom-3"></span>
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {/* Ganpati  Mandir */}
+        {/*panchlingeshwar Mandir */}
         <div className="bg-white rounded-xl shadow-lg p-4 fade-in flex flex-col justify-between items-center h-full hover:shadow-2xl hover:-translate-y-1 transition">
-          <img src="./images/mandir.jpeg" alt="गणपती मंदिर" className="w-full h-48 object-cover rounded-xl mb-4" />
-          <h5 className="text-lg font-bold mb-2 flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 2L12 22"/><path d="M6 12L12 2L18 12"/></svg>ग्रामदैवत हनुमान मंदिर</h5>
-          <p className="text-justify">हनुमान मंदिर गावाच्या मध्यभागात आहे. तसेच गावामध्ये हनुमान जयंती मोठ्या उत्साहात साजरी केली जाते. तसेच गावामध्ये अखंड हरीनाम सप्ताह साजरा केला जातो हा सप्ताह २५ वर्षापासून चालू आहे.</p>
+          <img src="./images/panchlingeshwarMandir.jpg" alt="पंचालिंगेश्वर मंदिर" className="w-full h-48 object-cover rounded-xl mb-4" />
+          <h5 className="text-lg font-bold mb-2 flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 2L12 22"/><path d="M6 12L12 2L18 12"/></svg>ग्रामदैवत श्री पंचालिंगेश्वर महाराज</h5>
+          <p className="text-justify">गावामध्ये सुंदर असे पंचालिंगेश्वर मंदिर आहे. हे मंदिर भक्तांसाठी एक महत्त्वाचे धार्मिक स्थळ आहे.</p>
         </div>
         {/* अर्जुनवडी तलाव
         <div className="bg-white rounded-xl shadow-lg p-4 fade-in flex flex-col justify-between items-center h-full hover:shadow-2xl hover:-translate-y-1 transition">

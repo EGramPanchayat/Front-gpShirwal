@@ -250,7 +250,8 @@ export default function DakhalaMagani() {
 
 
   return (
-    <ThemeProvider theme={customTheme}>
+    <sectiorn id="dakhala" >
+    <ThemeProvider theme={customTheme} >
       <Box
         sx={{
           display: 'flex',
@@ -669,5 +670,6 @@ export default function DakhalaMagani() {
         </Paper>
       </Box>
     </ThemeProvider>
+    </sectiorn>
   );
 }

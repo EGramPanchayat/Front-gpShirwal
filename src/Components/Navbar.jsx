@@ -6,8 +6,8 @@ const Navbar = ({ activeSection, mobileNavOpen, setMobileNavOpen }) => (
       <div className="flex items-center gap-3">
         <img src="/images/satya.png" alt="Logo" className="h-10 w-10 rounded-full object-cover border-2 border-white shadow mr-2" />
         <div className="flex flex-col">
-          <span className="text-xl font-bold">ग्रामपंचायत तडवळे </span>
-          <span className="text-sm font-semibold text-green-100 leading-tight">ता. आटपाडी, जि. सांगली</span>
+          <span className="text-xl font-bold">ग्रामपंचायत शिरवळ </span>
+          <span className="text-sm font-semibold text-green-100 leading-tight">ता. अक्कलकोट, जि. सोलापूर</span>
         </div>
       </div>
       {/* Hamburger for mobile only, hidden when menu open */}
@@ -32,7 +32,7 @@ const Navbar = ({ activeSection, mobileNavOpen, setMobileNavOpen }) => (
         <li><a href="#tax" className={activeSection==="tax"?"text-orange-500 font-bold underline":"hover:text-orange-400"}>कर भरणा</a></li>
         <li><a href="#members" className={activeSection==="members"?"text-orange-500 font-bold underline":"hover:text-orange-400"}>कार्यकारी मंडळ</a></li>
         <li><a href="#officials" className={activeSection==="officials"?"text-orange-500 font-bold underline":"hover:text-orange-400"}>कर्मचारी</a></li>
-        <li><a href="#places" className={activeSection==="places"?"text-orange-500 font-bold underline":"hover:text-orange-400"}>पर्यटन</a></li>
+        <li><a href="#dakhala" className={activeSection==="dakhala"?"text-orange-500 font-bold underline":"hover:text-orange-400"}>दाखले मागणी</a></li>
         <li><a href="#contact" className={activeSection==="contact"?"text-orange-500 font-bold underline":"hover:text-orange-400"}>संपर्क</a></li>
       </ul>
     </div>
@@ -57,7 +57,7 @@ const Navbar = ({ activeSection, mobileNavOpen, setMobileNavOpen }) => (
           <a href="#tax" className={activeSection==="tax"?"text-orange-500 font-bold underline text-lg":"hover:text-orange-400 text-lg"} onClick={()=>setMobileNavOpen(false)}>कर भरणा</a>
           <a href="#members" className={activeSection==="members"?"text-orange-500 font-bold underline text-lg":"hover:text-orange-400 text-lg"} onClick={()=>setMobileNavOpen(false)}>कार्यकारी मंडळ</a>
           <a href="#officials" className={activeSection==="officials"?"text-orange-500 font-bold underline text-lg":"hover:text-orange-400 text-lg"} onClick={()=>setMobileNavOpen(false)}>कर्मचारी</a>
-          <a href="#places" className={activeSection==="places"?"text-orange-500 font-bold underline text-lg":"hover:text-orange-400 text-lg"} onClick={()=>setMobileNavOpen(false)}>पर्यटन</a>
+          <a href="#dakhala" className={activeSection==="dakhala"?"text-orange-500 font-bold underline text-lg":"hover:text-orange-400 text-lg"} onClick={()=>setMobileNavOpen(false)}>दाखले मागणी</a>
           <a href="#contact" className={activeSection==="contact"?"text-orange-500 font-bold underline text-lg":"hover:text-orange-400 text-lg"} onClick={()=>setMobileNavOpen(false)}>संपर्क</a>
         </div>
       </div>

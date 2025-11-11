@@ -250,7 +250,7 @@ export default function AdminDashboard() {
       {/* NAVBAR */}
       <nav className="bg-green-700 text-white shadow-md fixed top-0 left-0 right-0 z-50">
         <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 w-[fit-content]">
             <img
               src="/images/satyamev.jpg"
               alt="Logo"
@@ -258,12 +258,13 @@ export default function AdminDashboard() {
             />
             <div className="flex flex-col">
               <h1 className="text-lg md:text-xl font-bold tracking-wide whitespace-nowrap">
-                ग्रामपंचायत तडवळे 
+                ग्रामपंचायत शिरवळ  
               </h1>
-              <span className="text-sm md:text-base text-white/80">
-                ता. आटपाडी जि. सांगली
+              <span className="text-sm md:text-base text-white/80 whitespace-nowrap">
+                ता. अक्कलकोट, जि. सोलापूर
               </span>
             </div>
+
           </div>
 
           <div className="relative w-full">
