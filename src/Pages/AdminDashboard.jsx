@@ -243,7 +243,7 @@ export default function AdminDashboard() {
             />
             <div className="flex flex-col">
               <h1 className="text-lg md:text-xl font-bold tracking-wide whitespace-nowrap">
-                ग्रामपंचायत तडवळे 
+                ग्रामपंचायत शिरवळ
               </h1>
               <span className="text-sm md:text-base text-white/80 whitespace-nowrap">
                 ता. अक्कलकोट, जि. सोलापूर
