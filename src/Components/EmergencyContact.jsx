@@ -41,12 +41,12 @@ const EmergencyContact = () => {
     <section
       id="emergency"
       ref={sectionRef}
-      className="w-full py-14 bg-gradient-to-b from-green-50 to-orange-50 pb-20  overflow-x-hidden"
+      className="w-full pt-10 pb-10 overflow-x-hidden bg-white"
     >
       <div className="w-full mx-auto max-w-[1200px] px-4 overflow-x-hidden">
         {/* Header */}
         <div className="text-center mb-10">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-green-800 relative inline-block">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-green-800 pt-10 relative inline-block">
             आपत्कालीन संपर्क
             <span className="block w-24 h-1 bg-orange-500 rounded mx-auto mt-2"></span>
           </h2>
@@ -60,7 +60,7 @@ const EmergencyContact = () => {
               onClick={() =>
                 (window.location.href = `tel:${item.number.replace(/\D/g, "")}`)
               }
-              className={`flex justify-between items-center bg-green-50 border border-green-200 rounded-xl shadow-sm hover:shadow-md transition-all duration-500 px-4 py-3 cursor-pointer transform ${
+              className={`flex justify-between items-center bg-white border border-green-200 rounded-xl shadow-sm hover:shadow-md transition-all duration-500 px-4 py-3 mx-3 cursor-pointer transform ${
                 visibleCards.includes(index)
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-4"
@@ -86,7 +86,7 @@ const EmergencyContact = () => {
         </div>
 
         {/* --- DESKTOP VIEW (fancy grid like AamchyaSeva) --- */}
-        <div className="hidden md:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 overflow-hidden">
+        <div className="hidden md:grid grid-cols-1 sm:grid-cols-2 md:pb-15 lg:grid-cols-5 gap-8 overflow-hidden">
           {emergencyContacts.map((item, index) => (
             <div
               key={index}
