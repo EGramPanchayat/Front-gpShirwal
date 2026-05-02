@@ -245,8 +245,8 @@ export default function AdminDashboard() {
               <h1 className="text-lg md:text-xl font-bold tracking-wide whitespace-nowrap">
                 ग्रामपंचायत शिरवळ
               </h1>
-              <span className="text-sm md:text-base text-white/80">
-                ता. अक्कलकोट जि. सोलापूर
+              <span className="text-sm md:text-base text-white/80 whitespace-nowrap">
+                ता.अक्कलकोट जि.सोलापूर
               </span>
             </div>
           </div>
