@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import axiosInstance from "../utils/axioesInstance"; // import your custom instance
 import { useNavigate } from "react-router-dom";
@@ -8,6 +8,20 @@ export default function LoginCard() {
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    // Check if already authenticated on mount
+    axiosInstance.get("/admin/check")
+      .then((res) => {
+        if (res.data.ok) {
+          toast.success("Welcome back!");
+          navigate("/admin");
+        }
+      })
+      .catch((err) => {
+        // Not authenticated, stay on login page
+      });
+  }, [navigate]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -53,7 +67,7 @@ export default function LoginCard() {
             className="absolute inset-0 w-full h-full object-cover"
           />
           <h1 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-2/11 text-2xl md:text-4xl font-extrabold text-white drop-shadow-lg font-serif text-center">
-            ग्रामपंचायत शिरवळ 
+            ग्रामपंचायत शिरवळ
           </h1>
         </div>
 
